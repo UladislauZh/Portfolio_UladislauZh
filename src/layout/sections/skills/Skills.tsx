@@ -15,7 +15,7 @@ export const Skills = () => {
         <Skill iconId={"cssSvg"} title={"CSS3"} />
         <Skill iconId={"jsSvg"} title={"JS"} />
         <Skill iconId={"reactSvg"} title={"react"} />
-        <Skill iconId={"vectorSvg"} title={"vector"} />
+        <Skill iconId={"vectorSvg"} title={"Redux"} />
         <Skill iconId={"bootstrapSvg"} title={"bootstrap"} />
         <Skill iconId={"tailwindSvg"} title={"tailwind"} />
         <Skill iconId={"sassSvg"} title={"sass"} />
