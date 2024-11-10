@@ -19,26 +19,3 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
 `;
-
-/*адаптив
-
-<nav>
-<ul>
-  <li>
-    <a href=""></a>
-  </li>
-  <li>
-    <a href=""></a>
-  </li>
-  <li>
-    <a href=""></a>
-  </li>
-  <li>
-    <a href=""></a>
-  </li>
-  <li>
-    <a href=""></a>
-  </li>
-</ul>
-</nav>
-*/
