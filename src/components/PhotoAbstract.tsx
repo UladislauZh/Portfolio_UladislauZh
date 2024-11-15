@@ -1,7 +1,14 @@
 import React from "react";
-import iconsSprite from "../../assets/images/vector/icons_sprite.svg";
+import iconsSprite from "../assets/images/vector/icons_sprite.svg";
 
-export const PhotoAbstarct = () => {
+type IconPropsType = {
+  iconId: string;
+  width?: string;
+  height?: string;
+  viewBox?: string;
+};
+
+export const PhotoAbstract = (props: IconPropsType) => {
   return (
     <svg
       width="770"

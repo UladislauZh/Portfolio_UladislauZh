@@ -2,6 +2,7 @@ import React from "react";
 import photo from "../../../assets/images/rastr/photo_portfolio.webp";
 import styled from "styled-components";
 import { FlexWrapper } from "../../../components/FlexWrapper";
+import { PhotoAbstract } from "../../../components/PhotoAbstract";
 
 export const Main = () => {
   return (
@@ -13,6 +14,7 @@ export const Main = () => {
           <MainTitle>I build things for web</MainTitle>
         </div>
         <Photo src={photo} alt="" />
+        <PhotoAbstract iconId="photoAbstractVector" />
       </FlexWrapper>
     </StyledMain>
   );
