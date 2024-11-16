@@ -1,21 +1,35 @@
 import React from "react";
-import { IconSocials } from "../icon/IconSocials";
 import styled from "styled-components";
+import { Icon } from "../icon/Icon";
+import { FlexWrapper } from "../FlexWrapper";
 
 export const Social = () => {
   return (
-    <StyledSocial>
+    <FlexWrapper gap="20px">
       <a href="">
-        <IconSocials iconId={"githubLinkVector"} />
+        <Icon
+          iconId={"githubLinkVector"}
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+        />
       </a>
       <a href="">
-        <IconSocials iconId={"linkedinLinkVector"} />
+        <Icon
+          iconId={"x(twitter)LinkVector"}
+          width="31"
+          height="31"
+          viewBox="0 0 31 31"
+        />
       </a>
       <a href="">
-        <IconSocials iconId={"x(twitter)LinkVector"} />
+        <Icon
+          iconId={"linkedinLinkVector"}
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+        />
       </a>
-    </StyledSocial>
+    </FlexWrapper>
   );
 };
-
-const StyledSocial = styled.a``;

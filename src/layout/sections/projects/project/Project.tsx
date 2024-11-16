@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Menu } from "../../../../components/menu/Menu";
+import { ProjectStack } from "../project/ProjectStack";
 
 const projectItems = ["HTML", "JavaScript", "SASS", "React"];
 
@@ -16,7 +16,7 @@ export const Project = (props: WorkPropsType) => {
       <Image src={props.src} alt="" />
       <Title>{props.title}</Title>
       <Text>{props.text}</Text>
-      <Menu menuItems={projectItems} />
+      <ProjectStack menuItems={projectItems} />
       <Link href={"#"}>Live Preview</Link>
       <Link href={"#"}>View Code</Link>
     </StyledProject>
