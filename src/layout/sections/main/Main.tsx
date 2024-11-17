@@ -14,7 +14,7 @@ export const Main = () => {
           <div>
             <MainTitle>
               Hi 👋,
-              <br /> I am <Name>Uladislau Zhuhar</Name>
+              <br /> I am <Name>Uladislau Zhyhar</Name>
               <br />I build things for web
             </MainTitle>
           </div>
