@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import { theme } from "./Theme";
 
 export const GlobalStyle = createGlobalStyle`
 *, 
@@ -11,12 +10,10 @@ box-sizing: border-box;
 }
 body {
   margin: 0;
-  font-family: "Poppins", "DM Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Poppins", "DM Sans", "-apple-system", "BlinkMacSystemFont", 'Segoe UI', 'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  line-height: 1.2;
 }
 
 a{
@@ -32,4 +29,9 @@ background-color: unset;
 border: none;
 }
 
+section{
+  padding: 100px 0;
+  /* max-width: 1230px;
+  margin: 0 auto; */
+}
 `;

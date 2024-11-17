@@ -11,49 +11,49 @@ import projectImg3 from "../../../assets/images/rastr/project_3.jpg";
 import projectImg4 from "../../../assets/images/rastr/project_4.jpg";
 import projectImg5 from "../../../assets/images/rastr/project_5.jpg";
 import projectImg6 from "../../../assets/images/rastr/project_6.jpg";
+import { Container } from "../../../components/Container";
 
 export const Projects = () => {
   return (
     <StyledProjects>
-      <SectionTitle>Projects</SectionTitle>
-      <SectionText>Things I’ve built so far</SectionText>
-      <FlexWrapper justify="space-around" wrap="wrap">
-        <Project
-          title="Project Tile goes here"
-          text="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
-          src={projectImg1}
-        />
-        <Project
-          title="Project Tile goes here"
-          text="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
-          src={projectImg2}
-        />
-        <Project
-          title="Project Tile goes here"
-          text="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
-          src={projectImg3}
-        />
-        <Project
-          title="Project Tile goes here"
-          text="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
-          src={projectImg4}
-        />
-        <Project
-          title="Project Tile goes here"
-          text="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
-          src={projectImg5}
-        />
-        <Project
-          title="Project Tile goes here"
-          text="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
-          src={projectImg6}
-        />
-      </FlexWrapper>
+      <Container>
+        <SectionTitle>Projects</SectionTitle>
+        <SectionText>Things I’ve built so far</SectionText>
+        <FlexWrapper justify="space-between" wrap="wrap">
+          <Project
+            title="Project Tile goes here"
+            text="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
+            src={projectImg1}
+          />
+          <Project
+            title="Project Tile goes here"
+            text="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
+            src={projectImg2}
+          />
+          <Project
+            title="Project Tile goes here"
+            text="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
+            src={projectImg3}
+          />
+          <Project
+            title="Project Tile goes here"
+            text="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
+            src={projectImg4}
+          />
+          <Project
+            title="Project Tile goes here"
+            text="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
+            src={projectImg5}
+          />
+          <Project
+            title="Project Tile goes here"
+            text="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
+            src={projectImg6}
+          />
+        </FlexWrapper>
+      </Container>
     </StyledProjects>
   );
 };
 
-const StyledProjects = styled.section`
-  min-height: 100vh;
-  background-color: #fbe8fd;
-`;
+const StyledProjects = styled.section``;

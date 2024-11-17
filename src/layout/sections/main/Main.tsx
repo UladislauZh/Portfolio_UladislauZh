@@ -12,9 +12,11 @@ export const Main = () => {
       <Container>
         <FlexWrapper align={"center"} justify={"space-between "}>
           <div>
-            <MainTitle>Hi 👋,</MainTitle>
-            <Name>I am Uladislau Zhuhar</Name>
-            <MainTitle>I build things for web</MainTitle>
+            <MainTitle>
+              Hi 👋,
+              <br /> I am <Name>Uladislau Zhuhar</Name>
+              <br />I build things for web
+            </MainTitle>
           </div>
           {/* <Abstract> */}
           <Photo src={photo} alt="" />
@@ -28,7 +30,6 @@ export const Main = () => {
 
 const StyledMain = styled.div`
   min-height: 100vh;
-  background-color: #fff5e7;
   display: flex;
 `;
 
@@ -36,12 +37,16 @@ const Photo = styled.img`
   width: 350px;
   height: 350px;
   object-fit: cover;
+  border: 9px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(180deg, #e70faa 0%, #00c0fd 100%) border-box;
+  border-radius: 50%;
+
+  /* border-image-slice: 9; */
 `;
 
 const MainTitle = styled.h1`
-  font-weight: 700;
   font-size: 58px;
-  line-height: 70px;
   letter-spacing: -0.02em;
   color: #42446e;
   text-align: left;
@@ -50,10 +55,12 @@ const MainTitle = styled.h1`
 const Name = styled.span`
   font-weight: 700;
   font-size: 58px;
-  line-height: 70px;
   letter-spacing: -0.02em;
   /* color: transparent; */
-  color: linear-gradient(250deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  /* color: linear-gradient(250deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%); */
+  background-image: linear-gradient(90deg, #83caeb 0%, #b380ee 100%);
+  background-clip: text;
+  color: transparent;
   text-align: left;
 `;
 /* <br /> */
