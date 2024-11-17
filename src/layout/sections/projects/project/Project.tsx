@@ -1,7 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { ProjectStack } from "../project/ProjectStack";
+import { ProjectMenu } from "./ProjectMenu";
 import { theme } from "../../../../styles/Theme";
+import image1 from "../../../../assets/images/vector/link_vector/ghLinkVector.svg";
+import { Icon } from "../../../../components/icon/Icon";
+import { Button } from "../../../../components/Button";
 
 const projectItems = ["HTML", "JavaScript", "SASS", "React"];
 
@@ -14,12 +17,35 @@ type WorkPropsType = {
 export const Project = (props: WorkPropsType) => {
   return (
     <StyledProject>
-      <Image src={props.src} alt="" />
-      <Title>{props.title}</Title>
-      <Text>{props.text}</Text>
-      {/* <ProjectStack menuItems={projectItems} /> */}
-      <Link href={"#"}>Live Preview</Link>
-      <Link href={"#"}>View Code</Link>
+      <ImageWrapper>
+        <Image src={props.src} alt="" />
+        <Button>Viev project</Button>
+      </ImageWrapper>
+      <Description>
+        <Title>{props.title}</Title>
+        <Text>{props.text}</Text>
+        <ProjectMenu menuItems={projectItems} />
+        <SectionLinks>
+          <SectionLink>
+            <Icon
+              iconId={"linkVector"}
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+            />
+            <Link href={"#"}>Live Preview</Link>
+          </SectionLink>
+          <SectionLink>
+            <Icon
+              iconId={"ghBlack"}
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+            />
+            <Link href={"#"}> View Code</Link>
+          </SectionLink>
+        </SectionLinks>
+      </Description>
     </StyledProject>
   );
 };
@@ -27,6 +53,38 @@ export const Project = (props: WorkPropsType) => {
 const StyledProject = styled.div`
   max-width: 375px;
   width: 100%;
+  margin-bottom: 60px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 100px 0px #00000033;
+`;
+
+const ImageWrapper = styled.div`
+  position: relative;
+
+  &:hover {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(8px);
+    }
+
+    ${Button} {
+      opacity: 1;
+    }
+  }
+
+  ${Button} {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 `;
 
 const Image = styled.img`
@@ -34,7 +92,13 @@ const Image = styled.img`
   height: 260px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
+`;
+
+const Description = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 25px 35px 25px 30px;
 `;
 
 const Title = styled.h4`
@@ -52,7 +116,38 @@ const Text = styled.p`
   line-height: 144%;
   color: ${theme.colors.font};
   text-align: left;
-  margin: 0 35px 0 30px;
+  margin-bottom: 12px;
 `;
 
-const Link = styled.a``;
+const SectionLinks = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const SectionLink = styled.div`
+  position: relative;
+`;
+
+const Link = styled.a`
+  color: #000;
+  /* text-decoration-line: underline; */
+  margin-left: 10px;
+
+  &:hover {
+    &::before {
+      height: 1px;
+    }
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+
+    background-color: #000;
+
+    position: absolute;
+    bottom: 2px;
+    left: -5px;
+    right: -5px;
+  }
+`;

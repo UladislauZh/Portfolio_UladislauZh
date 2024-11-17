@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { SectionTitle } from "../../../components/sectionTittle/SectionTittle";
 import { SectionText } from "../../../components/sectionTittle/SectionText";
-import { Menu } from "../../../components/menu/Menu";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Project } from "./project/Project";
 import projectImg1 from "../../../assets/images/rastr/project_1.jpg";
