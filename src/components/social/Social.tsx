@@ -2,34 +2,39 @@ import React from "react";
 import styled from "styled-components";
 import { Icon } from "../icon/Icon";
 import { FlexWrapper } from "../FlexWrapper";
+import { theme } from "../../styles/Theme";
 
 export const Social = () => {
   return (
     <FlexWrapper gap="20px">
-      <a href="">
+      <SocialLink href="">
         <Icon
           iconId={"githubLinkVector"}
           width="30"
           height="30"
           viewBox="0 0 30 30"
         />
-      </a>
-      <a href="">
+      </SocialLink>
+      <SocialLink href="">
         <Icon
           iconId={"x(twitter)LinkVector"}
           width="31"
           height="31"
           viewBox="0 0 31 31"
         />
-      </a>
-      <a href="">
+      </SocialLink>
+      <SocialLink href="">
         <Icon
           iconId={"linkedinLinkVector"}
           width="30"
           height="30"
           viewBox="0 0 30 30"
         />
-      </a>
+      </SocialLink>
     </FlexWrapper>
   );
 };
+
+const SocialLink = styled.a`
+  color: ${theme.colors.font};
+`;
