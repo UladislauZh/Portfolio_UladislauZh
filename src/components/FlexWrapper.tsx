@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../styles/Theme";
 
 type FlexWrapperPropsType = {
   direction?: string;
@@ -16,4 +17,8 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
   flex-wrap: ${(props) => props.wrap || "nowrap"};
   gap: ${(props) => props.gap || 0};
   height: 100%;
+
+  /* @media ${theme.media.mobile} {
+    justify-content: center;
+  } */
 `;

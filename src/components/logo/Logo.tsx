@@ -1,10 +1,18 @@
 import React from "react";
 import { Icon } from "../icon/Icon";
+import { theme } from "../../styles/Theme";
+import { styled } from "styled-components";
 
 export const Logo = () => {
   return (
-    <a href="">
+    <IconLogo href="">
       <Icon width="97" height="59" viewBox="0 0 97 59" iconId={"logoSvg"} />
-    </a>
+    </IconLogo>
   );
 };
+
+const IconLogo = styled.a`
+  @media ${theme.media.mobile} {
+    display: none;
+  }
+`;

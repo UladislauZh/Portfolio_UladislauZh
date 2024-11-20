@@ -5,6 +5,7 @@ import { Menu } from "../../components/menu/Menu";
 import { Social } from "../../components/social/Social";
 import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/FlexWrapper";
+import { MobileMenu } from "../../components/menu/MobileMenu";
 
 const items = ["Home", "Tech Stack", "Projects", "Contact"];
 
@@ -16,6 +17,7 @@ export const Header = () => {
           <Logo />
           <Menu menuItems={items} />
           <Social />
+          <MobileMenu menuItems={items} />
         </FlexWrapper>
       </Container>
     </StyledHeader>
@@ -23,7 +25,6 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-  margin-top: 40px;
   padding: 20px;
   position: fixed;
   top: 0;
