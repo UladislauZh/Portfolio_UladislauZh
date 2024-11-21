@@ -17,14 +17,15 @@ export const Skills = () => {
           <Skill iconId={"cssSvg"} title={"CSS3"} />
           <Skill iconId={"jsSvg"} title={"JS"} />
           <Skill iconId={"reactSvg"} title={"react"} />
-          <Skill iconId={"vectorSvg"} title={"Redux"} />
-          {/* <Skill iconId={"bootstrapSvg"} title={"bootstrap"} /> */}
-          {/* <Skill iconId={"tailwindSvg"} title={"tailwind"} /> */}
-          <Skill iconId={"sassSvg"} title={"sass"} />
-          <Skill iconId={"gitSvg"} title={"git"} />
-          {/* <Skill iconId={"greensockSvg"} title={"greensock"} /> */}
+          <Skill iconId={"vectorSvg"} title={"Redux"} viewBox="-5 0 115 110" />
+          <Skill iconId={"sassSvg"} title={"sass"} viewBox="0 -12 120 120" />
+          <Skill iconId={"gitSvg"} title={"git"} viewBox="-10 0 120 120" />
           <Skill iconId={"vscodeSvg"} title={"vscode"} />
-          <Skill iconId={"githubSVvg"} title={"github"} />
+          <Skill
+            iconId={"githubSVvg"}
+            title={"github"}
+            viewBox="-15 -10 120 120"
+          />
         </FlexWrapper>
       </Container>
     </StyledSkills>

@@ -7,6 +7,7 @@ import { FlexWrapper } from "../../../../components/FlexWrapper";
 type SkillPropsType = {
   iconId: string;
   title?: string;
+  viewBox?: string;
 };
 
 export const Skill = (props: SkillPropsType) => {
@@ -14,7 +15,10 @@ export const Skill = (props: SkillPropsType) => {
     <SkillStyled>
       <FlexWrapper align="center" direction="column">
         <IconWrapper>
-          <Icon iconId={props.iconId} />
+          <Icon
+            iconId={props.iconId}
+            viewBox={props.viewBox || "0 0 120 120"}
+          />
           <p>{props.title}</p>
         </IconWrapper>
       </FlexWrapper>
@@ -63,11 +67,11 @@ const IconWrapper = styled.div`
   }
 `;
 
-const SkillText = styled.p`
-  color: ${theme.colors.font};
-  font-family: "DM Sans", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  text-align: center;
-  margin: 30px 0 15px;
-`;
+// const SkillText = styled.p`
+//   color: ${theme.colors.font};
+//   font-family: "DM Sans", sans-serif;
+//   font-weight: 500;
+//   font-size: 20px;
+//   text-align: center;
+//   margin: 30px 0 15px;
+// `;
