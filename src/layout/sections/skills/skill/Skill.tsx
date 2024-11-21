@@ -15,8 +15,8 @@ export const Skill = (props: SkillPropsType) => {
       <FlexWrapper align="center" direction="column">
         <IconWrapper>
           <Icon iconId={props.iconId} />
+          <p>{props.title}</p>
         </IconWrapper>
-        {/* <SkillText>{props.title}</SkillText> */}
       </FlexWrapper>
     </SkillStyled>
   );
@@ -24,17 +24,42 @@ export const Skill = (props: SkillPropsType) => {
 
 const SkillStyled = styled.div`
   width: 120px;
-
+  /* width: 33%; */
   /* display: flex;
   align-items: center;
   flex-direction: column; */
+  margin: 0 55px;
+
+  @media ${theme.media.tablet} {
+    margin: 0 30px;
+  }
 `;
 
 const IconWrapper = styled.div`
   transition: transform 0.5s ease;
 
+  p {
+    opacity: 0;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    /* line-height: 300px; */
+    text-align: center;
+    /* margin: 30px 0 15px; */
+    color: black;
+    transition: 0.5s ease;
+    text-transform: capitalize;
+  }
+
   &:hover {
     transform: scale(1.2);
+  }
+
+  &:hover p {
+    transform: scale(1.2);
+    opacity: 1;
+    /* background: rgba(0, 0, 0, 0.5); */
+    cursor: pointer;
   }
 `;
 
@@ -44,6 +69,5 @@ const SkillText = styled.p`
   font-weight: 500;
   font-size: 20px;
   text-align: center;
-
   margin: 30px 0 15px;
 `;

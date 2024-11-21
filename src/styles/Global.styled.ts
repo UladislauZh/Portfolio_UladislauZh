@@ -9,6 +9,7 @@ margin:0;
 padding: 0;
 box-sizing: border-box;
 }
+
 body {
   margin: 0;
   font-family: "Poppins", "DM Sans", "-apple-system", "BlinkMacSystemFont", 'Segoe UI', 'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -36,7 +37,8 @@ color: ${theme.colors.accent};
 
 section{
   padding: 100px 0;
-  /* max-width: 1230px;
-  margin: 0 auto; */
+  max-width: 1230px;
+  margin: 0 auto;
+  background-color: #1f1f1fb8;
 }
 `;

@@ -19,7 +19,7 @@ export const Project = (props: WorkPropsType) => {
     <StyledProject>
       <ImageWrapper>
         <Image src={props.src} alt="" />
-        <Button>Viev project</Button>
+        {/* <Button>Viev project</Button> */}
       </ImageWrapper>
       <Description>
         <Title>{props.title}</Title>
@@ -56,12 +56,16 @@ const StyledProject = styled.div`
   margin-bottom: 60px;
   border-radius: 20px;
   box-shadow: 2px 2px 100px 0px #00000033;
+
+  /* @media ${theme.media.mobile} {
+    width: 80%;
+  } */
 `;
 
 const ImageWrapper = styled.div`
   position: relative;
 
-  &:hover {
+  /* &:hover {
     &::before {
       content: "";
       position: absolute;
@@ -84,15 +88,19 @@ const ImageWrapper = styled.div`
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-  }
+  } */
 `;
 
 const Image = styled.img`
-  width: 375px;
+  width: 100%;
   height: 260px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
   /* margin-bottom: 25px; */
+
+  /* @media ${theme.media.mobile} {
+    width: 80%;
+  } */
 `;
 
 const Description = styled.div`

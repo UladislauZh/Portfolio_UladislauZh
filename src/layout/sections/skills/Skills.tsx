@@ -18,11 +18,11 @@ export const Skills = () => {
           <Skill iconId={"jsSvg"} title={"JS"} />
           <Skill iconId={"reactSvg"} title={"react"} />
           <Skill iconId={"vectorSvg"} title={"Redux"} />
-          <Skill iconId={"bootstrapSvg"} title={"bootstrap"} />
-          <Skill iconId={"tailwindSvg"} title={"tailwind"} />
+          {/* <Skill iconId={"bootstrapSvg"} title={"bootstrap"} /> */}
+          {/* <Skill iconId={"tailwindSvg"} title={"tailwind"} /> */}
           <Skill iconId={"sassSvg"} title={"sass"} />
           <Skill iconId={"gitSvg"} title={"git"} />
-          <Skill iconId={"greensockSvg"} title={"greensock"} />
+          {/* <Skill iconId={"greensockSvg"} title={"greensock"} /> */}
           <Skill iconId={"vscodeSvg"} title={"vscode"} />
           <Skill iconId={"githubSVvg"} title={"github"} />
         </FlexWrapper>
