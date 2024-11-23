@@ -27,22 +27,26 @@ export const Project = (props: WorkPropsType) => {
         <ProjectMenu menuItems={projectItems} />
         <SectionLinks>
           <SectionLink>
-            <Icon
-              iconId={"linkVector"}
-              width="18"
-              height="18"
-              viewBox="0 0 18 18"
-            />
-            <Link href={"#"}>Live Preview</Link>
+            <Link href={"https://github.com/UladislauZh"}>
+              <Icon
+                iconId={"linkVector"}
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+              />
+              <p>Live Preview</p>
+            </Link>
           </SectionLink>
           <SectionLink>
-            <Icon
-              iconId={"ghBlack"}
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-            />
-            <Link href={"#"}> View Code</Link>
+            <Link href={"https://github.com/UladislauZh"}>
+              <Icon
+                iconId={"ghBlack"}
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              />
+              <p>View Code</p>
+            </Link>
           </SectionLink>
         </SectionLinks>
       </Description>
@@ -55,15 +59,18 @@ const StyledProject = styled.div`
   width: 100%;
   margin-bottom: 60px;
   border-radius: 20px;
-  box-shadow: 2px 2px 100px 0px #00000033;
+  /* box-shadow: 2px 2px 100px 0px rgba(36, 36, 36, 0.2); */
 
+  box-shadow: 2px 2px 100px 0 rgba(54, 54, 54, 0.2);
   /* @media ${theme.media.mobile} {
     width: 80%;
   } */
 `;
 
 const ImageWrapper = styled.div`
-  position: relative;
+  border-radius: 20px 20px 0 0;
+  height: 260px;
+  /* position: relative; */
 
   /* &:hover {
     &::before {
@@ -104,6 +111,8 @@ const Image = styled.img`
 `;
 
 const Description = styled.div`
+  border-radius: 0 0 20px 20px;
+  background-color: ${theme.colors.bgc};
   display: flex;
   flex-direction: column;
   padding: 25px 35px 25px 30px;
@@ -113,7 +122,7 @@ const Title = styled.h4`
   font-weight: 500;
   font-size: 28px;
   text-align: center;
-  color: #000;
+  color: ${theme.colors.basic};
   margin-bottom: 15px;
 `;
 
@@ -122,7 +131,7 @@ const Text = styled.p`
   font-weight: 300;
   font-size: 18px;
   line-height: 144%;
-  color: ${theme.colors.font};
+  color: ${theme.colors.basic};
   text-align: left;
   margin-bottom: 12px;
 `;
@@ -137,13 +146,15 @@ const SectionLink = styled.div`
 `;
 
 const Link = styled.a`
-  color: #000;
+  display: flex;
+  gap: 10px;
+  color: #fff;
   /* text-decoration-line: underline; */
   margin-left: 10px;
 
   &:hover {
     &::before {
-      height: 1px;
+      height: 2px;
     }
   }
 
@@ -151,11 +162,11 @@ const Link = styled.a`
     content: "";
     display: inline-block;
 
-    background-color: #000;
+    background: linear-gradient(90deg, #e70faa 0%, #00c0fd 100%) border-box;
 
     position: absolute;
     bottom: 2px;
-    left: -5px;
+    left: 35px;
     right: -5px;
   }
 `;

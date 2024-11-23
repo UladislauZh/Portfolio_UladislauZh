@@ -8,6 +8,8 @@ export const GlobalStyle = createGlobalStyle`
 margin:0;
 padding: 0;
 box-sizing: border-box;
+/* background-color: #191919; */
+/* background: linear-gradient(#e70faa 0%, #00c0fd 100%) */
 }
 
 body {
@@ -16,6 +18,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.2;
+  background-color: #191919;
 }
 
 a{
@@ -39,6 +42,6 @@ section{
   padding: 100px 0;
   max-width: 1230px;
   margin: 0 auto;
-  background-color: #1f1f1fb8;
+  /* background: linear-gradient(#e70faa 0%, #00c0fd 100%) */
 }
 `;

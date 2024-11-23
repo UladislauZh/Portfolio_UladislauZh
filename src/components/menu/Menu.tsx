@@ -6,6 +6,30 @@ import { theme } from "../../styles/Theme";
 //   menuItems: Array<string>
 // }
 
+// export const Menu = (props: { menuItems: Array<object> }) => {
+//   return (
+//     <StyledMenu>
+//       <ul>
+//         {props.menuItems.map((item: object, index: number) => {
+//           return (
+//             <ListItem key={index}>
+//               <Link href="#">
+//                 {item}
+//                 <Mask>
+//                   <span>{item}</span>
+//                 </Mask>
+//                 <Mask>
+//                   <span>{item}</span>
+//                 </Mask>
+//               </Link>
+//             </ListItem>
+//           );
+//         })}
+//       </ul>
+//     </StyledMenu>
+//   );
+// };
+
 export const Menu = (props: { menuItems: Array<string> }) => {
   return (
     <StyledMenu>
@@ -13,7 +37,7 @@ export const Menu = (props: { menuItems: Array<string> }) => {
         {props.menuItems.map((item: string, index: number) => {
           return (
             <ListItem key={index}>
-              <Link href="">
+              <Link href="#">
                 {item}
                 <Mask>
                   <span>{item}</span>

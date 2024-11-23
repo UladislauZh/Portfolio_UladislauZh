@@ -6,8 +6,16 @@ import { Social } from "../../components/social/Social";
 import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { MobileMenu } from "../../components/menu/MobileMenu";
+import { theme } from "../../styles/Theme";
 
-const items = ["Home", "Tech Stack", "Projects", "Contact"];
+// const items = [
+//   { title: "Home", href: "#Home" },
+//   { title: "Tech Stack", href: "#Tech Stack" },
+//   { title: "Projects", href: "#Projects" },
+//   { title: "Contacts", href: "#Contacts" },
+// ];
+
+const items = ["Home", "Tech Stack", "Projects", "Contacts"];
 
 export const Header = () => {
   return (
@@ -29,10 +37,16 @@ const StyledHeader = styled.header`
   margin: 0 auto;
   background-color: #1f1f1fb8;
 
+  border-radius: 0 0 50px 50px;
+
   /* padding: 20px; */
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 99999;
+
+  @media ${theme.media.mobile} {
+    padding: 4px 0;
+  }
 `;

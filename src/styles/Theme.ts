@@ -1,8 +1,11 @@
 export const theme = {
   colors: {
-    accent: "#42446E",
-    font: "#666666",
+    accent: "#D9D9D9",
+    basic: "#CCCCCC",
+    font: "#A7A7A7",
     borderColor: "#4a4a4a",
+    text: "FFFFFF",
+    bgc: "#363636",
   },
 
   media: {

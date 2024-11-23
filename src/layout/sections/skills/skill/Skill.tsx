@@ -50,7 +50,7 @@ const IconWrapper = styled.div`
     /* line-height: 300px; */
     text-align: center;
     /* margin: 30px 0 15px; */
-    color: black;
+    color: ${theme.colors.text};
     transition: 0.5s ease;
     text-transform: capitalize;
   }
@@ -62,7 +62,7 @@ const IconWrapper = styled.div`
   &:hover p {
     transform: scale(1.2);
     opacity: 1;
-    /* background: rgba(0, 0, 0, 0.5); */
+    color: ${theme.colors.basic};
     cursor: pointer;
   }
 `;

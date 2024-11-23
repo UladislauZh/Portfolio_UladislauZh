@@ -6,35 +6,39 @@ import { theme } from "../../styles/Theme";
 
 export const Social = () => {
   return (
-    <FlexWrapper gap="20px">
-      <SocialLink href="">
+    <FlexWrapper align="center" gap="20px" height="50px">
+      <SocialLink href="https://github.com/UladislauZh">
         <Icon
           iconId={"githubLinkVector"}
-          width="30"
-          height="30"
+          width="32"
+          height="32"
           viewBox="0 0 30 30"
         />
       </SocialLink>
-      <SocialLink href="">
-        <Icon
-          iconId={"x(twitter)LinkVector"}
-          width="31"
-          height="31"
-          viewBox="0 0 31 31"
-        />
+      <SocialLink href="https://t.me/zhigarius">
+        <Icon iconId={"Telegram"} width="32" height="32" viewBox="0 0 32 32" />
       </SocialLink>
-      <SocialLink href="">
-        <Icon
-          iconId={"linkedinLinkVector"}
-          width="30"
-          height="30"
-          viewBox="0 0 30 30"
-        />
+      <SocialLink href="https://vk.com/v.zhigar">
+        <Icon iconId={"Vk"} width="32" height="32" viewBox="0 0 32 32" />
       </SocialLink>
     </FlexWrapper>
   );
 };
 
 const SocialLink = styled.a`
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   color: ${theme.colors.font};
+
+  &:hover {
+    color: ${theme.colors.accent};
+    transform: translateY(-3px);
+  }
 `;

@@ -84,8 +84,8 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     height: 2px;
     background-color: white;
     position: absolute;
-    left: 20px;
-    bottom: -50px;
+    left: 40px;
+    bottom: -30px;
 
     /* bottom-90px */
 
@@ -129,7 +129,6 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     }
 
     @media ${theme.media.mobile} {
-      bottom: -35px;
     }
   }
 `;

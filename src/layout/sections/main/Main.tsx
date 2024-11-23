@@ -10,7 +10,7 @@ import { font } from "../../../styles/Common";
 
 export const Main = () => {
   return (
-    <StyledMain>
+    <StyledMain id="Home">
       <Container>
         <FlexWrapper align={"center"} justify={"space-around "} wrap="wrap">
           <MainTitleContainer>
@@ -34,7 +34,6 @@ const StyledMain = styled.div`
   padding: 100px 0;
   max-width: 1230px;
   margin: 0 auto;
-  background-color: #1f1f1fb8;
 
   min-height: 100vh;
   display: flex;

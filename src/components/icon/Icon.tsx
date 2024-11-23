@@ -21,5 +21,3 @@ export const Icon = (props: IconPropsType) => {
     </svg>
   );
 };
-
-// -5 0 115 110
