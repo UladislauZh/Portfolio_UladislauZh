@@ -13,7 +13,7 @@ export const Contacts = () => {
     <StyledContacts>
       <Container>
         <SectionTitle bottom="110px">Contact</SectionTitle>
-        <FlexWrapper>
+        <FlexWrapper wrap="wrap" gap="20px">
           <StyledForm>
             <SectionText bottom="20px">Get in touch me</SectionText>
             <Field placeholder="You Name" required />
@@ -95,6 +95,7 @@ const MyContacts = styled.div`
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  gap: 20px;
 `;
 
 const Contact = styled.a`

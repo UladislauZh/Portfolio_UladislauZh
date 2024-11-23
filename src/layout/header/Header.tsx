@@ -45,8 +45,4 @@ const StyledHeader = styled.header`
   left: 0;
   right: 0;
   z-index: 99999;
-
-  @media ${theme.media.mobile} {
-    padding: 4px 0;
-  }
 `;

@@ -35,7 +35,7 @@ const SkillStyled = styled.div`
   margin: 0 55px;
 
   @media ${theme.media.tablet} {
-    margin: 0 30px;
+    margin: 0 auto;
   }
 `;
 

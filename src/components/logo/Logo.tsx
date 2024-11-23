@@ -24,6 +24,8 @@ const IconLogo = styled.a`
   }
 
   @media ${theme.media.mobile} {
-    display: none;
+    p {
+      display: none;
+    }
   }
 `;
