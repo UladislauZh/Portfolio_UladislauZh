@@ -16,9 +16,9 @@ export const Contacts = () => {
         <FlexWrapper>
           <StyledForm>
             <SectionText bottom="20px">Get in touch me</SectionText>
-            <Field placeholder="You Name" />
-            <Field placeholder="You Mail" />
-            <Field placeholder="You Message" as={"textarea"} />
+            <Field placeholder="You Name" required />
+            <Field placeholder="You Mail" required type="email" />
+            <Field placeholder="You Message" required as={"textarea"} />
             <Button type="submit">Send message</Button>
           </StyledForm>
           <MyContacts>
@@ -74,6 +74,8 @@ const Field = styled.input`
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 0.05em;
+
+  color: ${theme.colors.basic};
 
   &::placeholder {
     color: ${theme.colors.font};

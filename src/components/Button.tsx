@@ -11,7 +11,7 @@ export const Button = styled.button`
 
   border: none;
   outline: none;
-  color: #fff;
+
   background-color: ${theme.colors.bgc};
   z-index: 0;
   border-radius: 10px;
