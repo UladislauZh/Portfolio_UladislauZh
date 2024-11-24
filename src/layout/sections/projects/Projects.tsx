@@ -14,7 +14,7 @@ import { Container } from "../../../components/Container";
 
 export const Projects = () => {
   return (
-    <StyledProjects>
+    <StyledProjects id="Projects">
       <Container>
         <SectionTitle>Projects</SectionTitle>
         <SectionText>Things I’ve built so far</SectionText>

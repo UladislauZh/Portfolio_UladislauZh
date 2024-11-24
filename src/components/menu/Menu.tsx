@@ -2,15 +2,39 @@ import React from "react";
 import styled from "styled-components";
 import { theme } from "../../styles/Theme";
 
-// type MenuPropsType = {
-//   menuItems: Array<string>
-// }
+type MenuPropsType = {
+  menuItems: { title: string; href: string }[];
+};
 
-// export const Menu = (props: { menuItems: Array<object> }) => {
+export const Menu = (props: MenuPropsType) => {
+  return (
+    <StyledMenu>
+      <ul>
+        {props.menuItems.map(({ title, href }) => {
+          return (
+            <ListItem key={href}>
+              <Link href={href}>
+                {title}
+                <Mask>
+                  <span>{title}</span>
+                </Mask>
+                <Mask>
+                  <span>{title}</span>
+                </Mask>
+              </Link>
+            </ListItem>
+          );
+        })}
+      </ul>
+    </StyledMenu>
+  );
+};
+
+// export const Menu = (props: { menuItems: Array<string> }) => {
 //   return (
 //     <StyledMenu>
 //       <ul>
-//         {props.menuItems.map((item: object, index: number) => {
+//         {props.menuItems.map((item: string, index: number) => {
 //           return (
 //             <ListItem key={index}>
 //               <Link href="#">
@@ -29,30 +53,6 @@ import { theme } from "../../styles/Theme";
 //     </StyledMenu>
 //   );
 // };
-
-export const Menu = (props: { menuItems: Array<string> }) => {
-  return (
-    <StyledMenu>
-      <ul>
-        {props.menuItems.map((item: string, index: number) => {
-          return (
-            <ListItem key={index}>
-              <Link href="#">
-                {item}
-                <Mask>
-                  <span>{item}</span>
-                </Mask>
-                <Mask>
-                  <span>{item}</span>
-                </Mask>
-              </Link>
-            </ListItem>
-          );
-        })}
-      </ul>
-    </StyledMenu>
-  );
-};
 
 const StyledMenu = styled.nav`
   ul {

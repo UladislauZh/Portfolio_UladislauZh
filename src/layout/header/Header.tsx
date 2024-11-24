@@ -7,15 +7,16 @@ import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { MobileMenu } from "../../components/menu/MobileMenu";
 import { theme } from "../../styles/Theme";
+import { title } from "process";
 
-// const items = [
-//   { title: "Home", href: "#Home" },
-//   { title: "Tech Stack", href: "#Tech Stack" },
-//   { title: "Projects", href: "#Projects" },
-//   { title: "Contacts", href: "#Contacts" },
-// ];
+const items = [
+  { title: "Home", href: "#Home" },
+  { title: "Tech Stack", href: "#Tech Stack" },
+  { title: "Projects", href: "#Projects" },
+  { title: "Contacts", href: "#Contacts" },
+];
 
-const items = ["Home", "Tech Stack", "Projects", "Contacts"];
+// const items = ["Home", "Tech Stack", "Projects", "Contacts"];
 
 export const Header = () => {
   return (
@@ -25,7 +26,7 @@ export const Header = () => {
           <Logo />
           <Menu menuItems={items} />
           <Social />
-          <MobileMenu menuItems={items} />
+          {/* <MobileMenu menuItems={items} /> */}
         </FlexWrapper>
       </Container>
     </StyledHeader>

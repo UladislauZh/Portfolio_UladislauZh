@@ -10,7 +10,7 @@ import { Icon } from "../../../components/icon/Icon";
 
 export const Contacts = () => {
   return (
-    <StyledContacts>
+    <StyledContacts id="Contacts">
       <Container>
         <SectionTitle bottom="110px">Contact</SectionTitle>
         <FlexWrapper wrap="wrap" gap="20px">
