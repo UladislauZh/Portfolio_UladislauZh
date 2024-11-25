@@ -59,7 +59,6 @@ const StyledProject = styled.div`
   width: 100%;
   margin-bottom: 60px;
   border-radius: 20px;
-  /* box-shadow: 2px 2px 100px 0px rgba(36, 36, 36, 0.2); */
 
   box-shadow: 2px 2px 10px 20px rgba(54, 54, 54, 0.2);
 `;
@@ -67,32 +66,6 @@ const StyledProject = styled.div`
 const ImageWrapper = styled.div`
   border-radius: 20px 20px 0 0;
   height: 260px;
-  /* position: relative; */
-
-  /* &:hover {
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      left: 0;
-      background: rgba(0, 0, 0, 0.3);
-      backdrop-filter: blur(8px);
-    }
-
-    ${Button} {
-      opacity: 1;
-    }
-  }
-
-  ${Button} {
-    opacity: 0;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  } */
 `;
 
 const Image = styled.img`
