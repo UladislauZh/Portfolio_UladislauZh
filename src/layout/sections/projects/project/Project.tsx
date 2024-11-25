@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { theme } from "../../../../styles/Theme";
 import { Icon } from "../../../../components/icon/Icon";
-import { Button } from "../../../../components/Button";
 import { font } from "../../../../styles/Common";
 
 // const projectItems = ["HTML", "JavaScript", "SASS", "React"];
@@ -89,7 +88,7 @@ const Description = styled.div`
 `;
 
 const Title = styled.h4`
-  ${font({ weight: 500, Fmax: 28, Fmin: 22 })}
+  ${font({ weight: 500, Fmax: 27, Fmin: 23 })}
   /* font-weight: 500;
   font-size: 28px; */
   text-align: center;
