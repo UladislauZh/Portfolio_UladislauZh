@@ -10,7 +10,9 @@ export const Footer = () => {
     <StyledFooter>
       <FlexWrapper direction="column" align="center">
         <Name>Uladislau</Name>
-        <Social />
+        <SocialContainer>
+          <Social />
+        </SocialContainer>
         <Copyright>© 2023 Uladislau Zhyhar, All Rights Reserved.</Copyright>
       </FlexWrapper>
     </StyledFooter>
@@ -27,6 +29,12 @@ const Name = styled.span`
   font-size: 22px;
   letter-spacing: 1px;
   color: ${theme.colors.accent};
+`;
+
+const SocialContainer = styled.div`
+  @media ${theme.media.mobile} {
+    padding-left: 60px;
+  }
 `;
 
 const Copyright = styled.small`

@@ -30,30 +30,6 @@ export const Menu = (props: MenuPropsType) => {
   );
 };
 
-// export const Menu = (props: { menuItems: Array<string> }) => {
-//   return (
-//     <StyledMenu>
-//       <ul>
-//         {props.menuItems.map((item: string, index: number) => {
-//           return (
-//             <ListItem key={index}>
-//               <Link href="#">
-//                 {item}
-//                 <Mask>
-//                   <span>{item}</span>
-//                 </Mask>
-//                 <Mask>
-//                   <span>{item}</span>
-//                 </Mask>
-//               </Link>
-//             </ListItem>
-//           );
-//         })}
-//       </ul>
-//     </StyledMenu>
-//   );
-// };
-
 const StyledMenu = styled.nav`
   ul {
     display: flex;

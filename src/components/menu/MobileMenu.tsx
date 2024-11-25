@@ -2,11 +2,11 @@ import React from "react";
 import styled, { css } from "styled-components";
 import { theme } from "../../styles/Theme";
 
-// type MenuPropsType = {
-//   menuItems: Array<string>
-// }
+type MenuPropsType = {
+  menuItems: { title: string; href: string }[];
+};
 
-export const MobileMenu = (props: { menuItems: Array<string> }) => {
+export const MobileMenu = (props: MenuPropsType) => {
   return (
     <StyledMobileMenu>
       <BurgerButton isOpen={false}>
@@ -14,16 +14,16 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
       </BurgerButton>
       <MobileMenuPopup isOpen={false}>
         <ul>
-          {props.menuItems.map((item: string, index: number) => {
+          {props.menuItems.map(({ title, href }) => {
             return (
-              <ListItem key={index}>
-                <Link href="">
-                  {item}
+              <ListItem key={href}>
+                <Link href={href}>
+                  {title}
                   <Mask>
-                    <span>{item}</span>
+                    <span>{title}</span>
                   </Mask>
                   <Mask>
-                    <span>{item}</span>
+                    <span>{title}</span>
                   </Mask>
                 </Link>
               </ListItem>

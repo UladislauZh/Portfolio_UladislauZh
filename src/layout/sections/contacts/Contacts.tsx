@@ -63,7 +63,7 @@ const StyledForm = styled.form`
 `;
 const Field = styled.input`
   width: 100%;
-  box-shadow: 2px 2px 100px 0 rgba(54, 54, 54, 0.2);
+  box-shadow: 2px 2px 10px 10px rgba(54, 54, 54, 0.2);
   /* box-shadow: 2px 2px 100px 0px #00000033; */
   border: 1px solid ${theme.colors.borderColor};
   padding: 7px 15px;

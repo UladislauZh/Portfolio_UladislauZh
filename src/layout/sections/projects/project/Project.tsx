@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { ProjectMenu } from "./ProjectMenu";
 import { theme } from "../../../../styles/Theme";
-import image1 from "../../../../assets/images/vector/link_vector/ghLinkVector.svg";
 import { Icon } from "../../../../components/icon/Icon";
 import { Button } from "../../../../components/Button";
+import { font } from "../../../../styles/Common";
 
-const projectItems = ["HTML", "JavaScript", "SASS", "React"];
+// const projectItems = ["HTML", "JavaScript", "SASS", "React"];
 
 type WorkPropsType = {
   title: string;
@@ -24,7 +23,8 @@ export const Project = (props: WorkPropsType) => {
       <Description>
         <Title>{props.title}</Title>
         <Text>{props.text}</Text>
-        <ProjectMenu menuItems={projectItems} />
+        {/* <ProjectMenu menuItems={projectItems} /> */}
+        <TechStack>Tech stack : HTML , JavaScript, SASS, React</TechStack>
         <SectionLinks>
           <SectionLink>
             <Link href={"https://github.com/UladislauZh"}>
@@ -61,10 +61,7 @@ const StyledProject = styled.div`
   border-radius: 20px;
   /* box-shadow: 2px 2px 100px 0px rgba(36, 36, 36, 0.2); */
 
-  box-shadow: 2px 2px 100px 0 rgba(54, 54, 54, 0.2);
-  /* @media ${theme.media.mobile} {
-    width: 80%;
-  } */
+  box-shadow: 2px 2px 10px 20px rgba(54, 54, 54, 0.2);
 `;
 
 const ImageWrapper = styled.div`
@@ -119,21 +116,31 @@ const Description = styled.div`
 `;
 
 const Title = styled.h4`
-  font-weight: 500;
-  font-size: 28px;
+  ${font({ weight: 500, Fmax: 28, Fmin: 22 })}
+  /* font-weight: 500;
+  font-size: 28px; */
   text-align: center;
   color: ${theme.colors.basic};
   margin-bottom: 15px;
 `;
 
 const Text = styled.p`
+  ${font({ weight: 300, Fmax: 18, Fmin: 14 })}
   max-width: 315px;
-  font-weight: 300;
-  font-size: 18px;
+  /* font-weight: 300;
+  font-size: 18px; */
   line-height: 144%;
   color: ${theme.colors.basic};
   text-align: left;
-  margin-bottom: 12px;
+`;
+
+const TechStack = styled.p`
+  ${font({ weight: 300, Fmax: 14, Fmin: 12 })}
+  /* font-weight: 300;
+  font-size: 14px; */
+  line-height: 162%;
+  color: ${theme.colors.basic};
+  margin: 12px 0 20px 0;
 `;
 
 const SectionLinks = styled.div`
@@ -150,7 +157,9 @@ const Link = styled.a`
   gap: 10px;
   color: #fff;
   /* text-decoration-line: underline; */
-  margin-left: 10px;
+  & + & {
+    margin-left: 10px;
+  }
 
   &:hover {
     &::before {
@@ -165,8 +174,8 @@ const Link = styled.a`
     background: linear-gradient(90deg, #e70faa 0%, #00c0fd 100%) border-box;
 
     position: absolute;
-    bottom: 2px;
-    left: 35px;
-    right: -5px;
+    bottom: 1px;
+    left: 25px;
+    right: -3px;
   }
 `;
