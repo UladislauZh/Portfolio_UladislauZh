@@ -17,12 +17,11 @@ export const Project = (props: WorkPropsType) => {
     <StyledProject>
       <ImageWrapper>
         <Image src={props.src} alt="" />
-        {/* <Button>Viev project</Button> */}
       </ImageWrapper>
       <Description>
         <Title>{props.title}</Title>
         <Text>{props.text}</Text>
-        {/* <ProjectMenu menuItems={projectItems} /> */}
+
         <TechStack>Tech stack : HTML , JavaScript, SASS, React</TechStack>
         <SectionLinks>
           <SectionLink>
