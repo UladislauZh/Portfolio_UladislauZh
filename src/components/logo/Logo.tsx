@@ -13,6 +13,7 @@ export const Logo = () => {
 };
 
 const IconLogo = styled.a`
+  display: block;
   display: flex;
   align-items: center;
   text-decoration: none;

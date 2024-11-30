@@ -10,7 +10,6 @@ export const Footer = () => {
       <FlexWrapper direction="column" align="center">
         <Name>Uladislau</Name>
         <SocialContainer>
-          <Logo />
           <Social />
         </SocialContainer>
         <Copyright>© 2023 Uladislau Zhyhar, All Rights Reserved.</Copyright>
@@ -21,6 +20,7 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
   padding: 40px 0;
+  max-width: 1230px;
 `;
 
 const Name = styled.span`
@@ -32,9 +32,6 @@ const Name = styled.span`
 `;
 
 const SocialContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   /* @media ${theme.media.mobile} {
     padding-left: 60px;
   } */
