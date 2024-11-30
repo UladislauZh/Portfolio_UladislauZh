@@ -51,7 +51,8 @@ const SocialLink = styled.a`
   color: ${theme.colors.font};
 
   &:hover {
-    color: ${theme.colors.accent};
+    color: white;
+    /* background-image: linear-gradient(90deg, #83caeb 0%, #b380ee 100%); */
     transform: translateY(-3px);
   }
 `;

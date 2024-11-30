@@ -15,9 +15,9 @@ type WorkPropsType = {
 export const Project = (props: WorkPropsType) => {
   return (
     <StyledProject>
-      <ImageWrapper>
-        <Image src={props.src} alt="" />
-      </ImageWrapper>
+      {/* <ImageWrapper> */}
+      <Image src={props.src} alt="" />
+      {/* </ImageWrapper> */}
       <Description>
         <Title>{props.title}</Title>
         <Text>{props.text}</Text>
@@ -61,12 +61,13 @@ const StyledProject = styled.div`
   box-shadow: 2px 2px 10px 20px rgba(54, 54, 54, 0.2);
 `;
 
-const ImageWrapper = styled.div`
-  border-radius: 20px 20px 0 0;
-  height: 260px;
-`;
+// const ImageWrapper = styled.div`
+//   border-radius: 20px 20px 0 0;
+//   height: 260px;
+// `;
 
 const Image = styled.img`
+  display: block;
   width: 100%;
   height: 260px;
   object-fit: cover;
@@ -90,7 +91,7 @@ const Title = styled.h4`
   ${font({ weight: 500, Fmax: 27, Fmin: 23 })}
   /* font-weight: 500;
   font-size: 28px; */
-  text-align: center;
+  text-align: left;
   color: ${theme.colors.basic};
   margin-bottom: 15px;
 `;

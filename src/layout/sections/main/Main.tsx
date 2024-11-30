@@ -2,9 +2,7 @@ import React from "react";
 import photo from "../../../assets/images/rastr/photo_portfolio.webp";
 import styled from "styled-components";
 import { FlexWrapper } from "../../../components/FlexWrapper";
-import { PhotoAbstract } from "../../../components/PhotoAbstract";
 import { Container } from "../../../components/Container";
-import photoAbstractVector from "../../../../src/assets/images/vector/abstractVector.svg";
 import { theme } from "../../../styles/Theme";
 import { font } from "../../../styles/Common";
 
@@ -31,7 +29,7 @@ export const Main = () => {
 };
 
 const StyledMain = styled.div`
-  padding: 100px 0;
+  padding: 50px 0;
   max-width: 1230px;
   margin: 0 auto;
 

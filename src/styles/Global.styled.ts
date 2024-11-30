@@ -19,6 +19,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.2;
   background-color: #191919;
+  min-width: 365px;
 }
 
 a{
@@ -39,7 +40,7 @@ color: ${theme.colors.accent};
 }
 
 section{
-  padding: 100px 0;
+  padding: 50px 0;
   max-width: 1230px;
   margin: 0 auto;
   /* background: linear-gradient(#e70faa 0%, #00c0fd 100%) */

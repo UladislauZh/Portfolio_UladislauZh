@@ -32,7 +32,7 @@ const SkillStyled = styled.div`
   /* display: flex;
   align-items: center;
   flex-direction: column; */
-  margin: 0 55px;
+  margin: 0 30px;
 
   @media ${theme.media.tablet} {
     margin: 0 auto;
@@ -54,7 +54,7 @@ const IconWrapper = styled.div`
     transition: 0.5s ease;
     text-transform: capitalize;
   }
-
+  /* 
   &:hover {
     transform: scale(1.2);
   }
@@ -64,7 +64,7 @@ const IconWrapper = styled.div`
     opacity: 1;
     color: ${theme.colors.basic};
     cursor: pointer;
-  }
+  } */
 `;
 
 // const SkillText = styled.p`

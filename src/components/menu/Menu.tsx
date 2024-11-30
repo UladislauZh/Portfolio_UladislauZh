@@ -74,8 +74,8 @@ const ListItem = styled.li`
   &::before {
     content: "";
     height: 3px;
-    background-color: ${theme.colors.font};
-
+    /* background-color: ${theme.colors.font}; */
+    background-image: linear-gradient(90deg, #83caeb 0%, #b380ee 100%);
     position: absolute;
     top: 50%;
     left: -10px;

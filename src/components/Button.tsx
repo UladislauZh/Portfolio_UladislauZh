@@ -15,22 +15,23 @@ export const Button = styled.button`
   background-color: ${theme.colors.bgc};
   z-index: 0;
   border-radius: 10px;
+  overflow: visible;
 
   &::before {
     content: "";
-    background: linear-gradient(45deg, #e70faa 15%, #00c0fd 17%);
     position: absolute;
     top: -2px;
     left: -2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(2px);
     width: calc(100% + 4px);
     height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
+    border-radius: inherit;
+    background: linear-gradient(45deg, #e70faa, #00c0fd, #e70faa);
+    background-size: 200% 200%; /* Позволяет градиенту двигаться */
+    z-index: -1;
+    animation: spin-border 3s linear infinite; /* Добавляем движение */
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    border-radius: 10px;
+    transition: opacity 0.4s ease-in-out;
+    filter: blur(2px);
   }
 
   &:active {
@@ -51,6 +52,18 @@ export const Button = styled.button`
     left: 0;
     top: 0;
     border-radius: 10px;
+  }
+
+  @keyframes glowing {
+    0% {
+      background-position: 0% 70%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 70%;
+    }
   }
 `;
 

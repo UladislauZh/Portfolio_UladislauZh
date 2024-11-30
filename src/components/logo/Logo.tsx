@@ -5,7 +5,7 @@ import { styled } from "styled-components";
 
 export const Logo = () => {
   return (
-    <IconLogo href="https://uladislauzh.github.io/portfolio-start-project/">
+    <IconLogo href="https://uladislauzh.github.io/Portfolio_UladislauZh/">
       <Icon width="80" height="80" viewBox="-35 0 364 364" iconId={"logoSvg"} />
       <p>Uladislau Zh</p>
     </IconLogo>

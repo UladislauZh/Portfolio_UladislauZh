@@ -12,7 +12,7 @@ export const Contacts = () => {
   return (
     <StyledContacts id="Contacts">
       <Container>
-        <SectionTitle bottom="110px">Contact</SectionTitle>
+        <SectionTitle bottom="80px">Contact</SectionTitle>
         <FlexWrapper wrap="wrap" gap="20px">
           <StyledForm>
             <SectionText bottom="20px">Get in touch me</SectionText>
@@ -24,7 +24,7 @@ export const Contacts = () => {
           <MyContacts>
             <Contact href="tel:89214369464">
               <Icon iconId="Phone" width="32" height="32" viewBox="0 0 32 32" />
-              <p>Tel: 89214369464</p>
+              Tel: 89214369464
             </Contact>
             <Contact href="tel:+375298290149">
               <Icon
@@ -33,11 +33,11 @@ export const Contacts = () => {
                 height="32"
                 viewBox="0 0 32 32"
               />
-              <p>Tel: +375298290149</p>
+              Tel: +375298290149
             </Contact>
             <Contact href="mailto:uladislau.zh@gmail.com">
               <Icon iconId="Email" width="32" height="32" viewBox="0 0 32 32" />
-              <p>Email: uladislau.zh@gmail.com</p>
+              Email: uladislau.zh@gmail.com
             </Contact>
           </MyContacts>
         </FlexWrapper>
@@ -104,12 +104,14 @@ const Contact = styled.a`
   align-items: center;
   gap: 10px;
   transition: 0.5s ease;
-
-  p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 144%;
+  /* p {
     font-weight: 300;
     font-size: 18px;
     line-height: 144%;
-  }
+  } */
 
   &:hover {
     &:hover {
