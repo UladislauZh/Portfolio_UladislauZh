@@ -1,8 +1,8 @@
-import React from "react";
 import { styled } from "styled-components";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { theme } from "../../styles/Theme";
 import { Social } from "../../components/social/Social";
+import { Logo } from "../../components/logo/Logo";
 
 export const Footer = () => {
   return (
@@ -10,6 +10,7 @@ export const Footer = () => {
       <FlexWrapper direction="column" align="center">
         <Name>Uladislau</Name>
         <SocialContainer>
+          <Logo />
           <Social />
         </SocialContainer>
         <Copyright>© 2023 Uladislau Zhyhar, All Rights Reserved.</Copyright>
@@ -31,9 +32,12 @@ const Name = styled.span`
 `;
 
 const SocialContainer = styled.div`
-  @media ${theme.media.mobile} {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* @media ${theme.media.mobile} {
     padding-left: 60px;
-  }
+  } */
 `;
 
 const Copyright = styled.small`

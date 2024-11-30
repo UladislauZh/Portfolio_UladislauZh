@@ -23,7 +23,7 @@ const IconLogo = styled.a`
     color: transparent;
   }
 
-  @media ${theme.media.mobile} {
+  @media ${theme.media.tablet} {
     p {
       display: none;
     }

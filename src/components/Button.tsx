@@ -15,7 +15,7 @@ export const Button = styled.button`
   background-color: ${theme.colors.bgc};
   z-index: 0;
   border-radius: 10px;
-  overflow: visible;
+  /* overflow: visible; */
 
   &::before {
     content: "";
@@ -26,9 +26,9 @@ export const Button = styled.button`
     height: calc(100% + 4px);
     border-radius: inherit;
     background: linear-gradient(45deg, #e70faa, #00c0fd, #e70faa);
-    background-size: 200% 200%; /* Позволяет градиенту двигаться */
+    background-size: 400%; /* Позволяет градиенту двигаться */
     z-index: -1;
-    animation: spin-border 3s linear infinite; /* Добавляем движение */
+    animation: glowing 10s linear infinite; /* Добавляем движение */
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
     filter: blur(2px);
@@ -56,13 +56,13 @@ export const Button = styled.button`
 
   @keyframes glowing {
     0% {
-      background-position: 0% 70%;
+      background-position: 0% 0%;
     }
     50% {
-      background-position: 100% 50%;
+      background-position: 400% 0%;
     }
     100% {
-      background-position: 0% 70%;
+      background-position: 0% 0%;
     }
   }
 `;

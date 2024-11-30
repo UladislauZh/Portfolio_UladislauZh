@@ -33,8 +33,9 @@ export const Social = () => {
 };
 
 const SocialsLinks = styled.div`
-  @media ${theme.media.mobile} {
-    padding-right: 60px;
+  @media ${theme.media.tablet} {
+    /* padding-right: 60px; */
+    margin: 0 auto;
   }
 `;
 
