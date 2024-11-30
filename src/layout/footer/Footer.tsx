@@ -21,6 +21,7 @@ export const Footer = () => {
 const StyledFooter = styled.footer`
   padding: 40px 0;
   max-width: 1230px;
+  margin: 0 auto;
 `;
 
 const Name = styled.span`
